@@ -1,0 +1,141 @@
+\documentclass[a4paper, 11pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper,scale=0.9}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage[cache=false]{minted}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+%SetFonts
+
+%SetFonts
+
+\linespread{1.5}
+
+\title{ACM Template}
+\author{Elegia Inferno}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\tableofcontents
+
+\newpage
+
+\section{Data Structure}
+
+\subsection{Treap (Zip Version)}
+
+\inputminted[breaklines, linenos]{cpp}{ds/treap.cpp}
+
+\subsection{Splay}
+
+\inputminted[breaklines, linenos]{cpp}{ds/splay.cpp}
+
+\subsection{Historical Maximum}
+
+\inputminted[breaklines, linenos]{cpp}{ds/hs.cpp}
+
+\section{String}
+
+\subsection{Suffix Array}
+
+\inputminted[breaklines, linenos]{cpp}{str/sa.cpp}
+
+\subsection{KMP}
+
+\inputminted[breaklines, linenos]{cpp}{str/kmp.cpp}
+
+\subsection{Trie Automaton}
+
+\inputminted[breaklines, linenos]{cpp}{str/trieg.cpp}
+
+\section{Math}
+
+\subsection{FFT}
+
+\inputminted[breaklines, linenos]{cpp}{math/fft.cpp}
+
+\subsection{Polynomial Exponentiation}
+
+\inputminted[breaklines, linenos]{cpp}{math/pexp.cpp}
+
+\subsection{Modulus Square Root}
+
+\inputminted[breaklines, linenos]{cpp}{math/msqrt.cpp}
+
+\subsection{Primality Test}
+
+\subsubsection{Miller Rabin}
+
+\inputminted[breaklines, linenos]{cpp}{math/ptest.cpp}
+
+\subsection{Factorization (Pollard-$\rho$)}
+
+\inputminted[breaklines, linenos]{cpp}{math/rho.cpp}
+
+\subsection{Binomial Modulo Prime}
+
+\subsubsection{Extended Lucas}
+
+\inputminted[breaklines, linenos]{cpp}{math/exlucas.cpp}
+
+\section{Graph}
+
+\subsection{Max Flow}
+
+\subsubsection{Dinic}
+
+Time complexity: $\Theta(V^2E)$
+
+\subsubsection{HLPP}
+
+Time complexity: $\Theta(V^3)$
+
+\subsection{Max Matching on Bipartite Graph}
+
+\subsubsection{Hungarian}
+
+Time complexity: $\Theta(VE)$
+
+\subsubsection{Hopcroft-Karp}
+
+Time complexity: $\Theta(\sqrt V E)$
+
+\subsection{Max Weighted Matching (KM)}
+
+\inputminted[breaklines, linenos]{cpp}{graph/km.cpp}
+
+Time complexity: $\Theta(V^3)$
+
+\subsection{SCC (tarjan)}
+
+\inputminted[breaklines, linenos]{cpp}{graph/scc.cpp}
+
+\subsection{BCC}
+
+\subsubsection{Block Forest}
+
+\inputminted[breaklines, linenos]{cpp}{graph/bf.cpp}
+
+\section{Geometry}
+
+\subsection{Vector}
+
+\inputminted[breaklines, linenos]{cpp}{geo/vec.cpp}
+
+\subsection{Convex Hull}
+
+\inputminted[breaklines, linenos]{cpp}{geo/hull.cpp}
+
+\end{document}
